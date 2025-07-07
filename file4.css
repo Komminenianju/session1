@@ -1,0 +1,27 @@
+#first{
+    color: red;
+    background-color: antiquewhite;
+    height:300px;
+    width: 300px;
+    border: 1px solid pink;
+    padding-top:10px;
+    padding-left: 20px;
+
+}
+#second{
+    color: blue;
+    background-color: lightblue;
+    height: 80px;
+    width: 40px;
+    border: 1px solid black;
+    padding-bottom: 30%;
+    margin-bottom:30px ;
+}
+#third{
+    color: green;
+    background-color: lightgreen;
+    height: 80px;
+    width: 40px;
+    border: 1px solid purple;
+    padding-right: 20%;
+}

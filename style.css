@@ -1,0 +1,47 @@
+.h-center{
+    background-image:url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/ocean.jpg");
+    background-size: cover;
+    width:500px;
+    height:5003px;;
+}
+.h-center{
+    color:blue;
+    text-align:center;   
+    background-color:orangered;
+    padding:300px;
+    border:5px solid green;
+    padding:100px;
+    font-style: inherit;
+}
+.h-center h1{
+    color:yellow
+}
+.h-center p{
+    color:blue;
+}
+h.center button{
+    background-color:darkblue;
+    color: green;
+}
+h.center button:hover{
+    background-color:indigo;
+    color: goldenrod;
+}
+#q1{
+    color: brown;
+}
+#q2{
+    color: red;
+}
+#q3{
+    color:darkmagenta;
+}
+#q4{
+    color:forestgreen;
+}
+#b1{
+    color: navy;
+}
+#b2{
+    color: mediumvioletred;
+}

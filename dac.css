@@ -1,0 +1,16 @@
+.first{
+    background-color: #1da7d5;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.h1 {
+   color: darkblue;
+   text-align: center;
+   text-transform: uppercase;
+ }
+.second {
+    background-color: lightgreen;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+
