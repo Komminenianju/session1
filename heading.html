@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tourism</title>
+  <link rel="stylesheet" href="heading.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Section Home -->
+<div id="sectionhome">
+  <div class="bg-container d-flex flex-column justify-content-start">
+    <div class="tourism-card">
+      <h1 class="heading">Tourism</h1>
+      <p class="para">You can enjoy your trip</p>
+      <button class="button" onclick="display('sectionfavouriteplaces')">Get Started</button>
+    </div>
+  </div>
+</div>
+
+<!-- Section Favourite Places -->
+<div id="sectionfavouriteplaces">
+  <div class="favourite-places-bg-container">
+    <h1 class="favourite-place-heading">Favorite Places</h1>
+
+    <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectiontajmahaldetailedview')">
+      <div>
+        <h1 class="favourite-place-card-heading">Taj Mahal</h1>
+        <p class="favourite-place-card-description">The Taj Mahal is one of the most iconic monuments in the world, celebrated for its breathtaking beauty and deep emotional significance.</p>
+      </div>
+      <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/tajmahal-img.png" alt="Taj Mahal" class="card-image">
+    </div>
+
+    <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionmysorepalacedetailedview')">
+      <div>
+        <h1 class="favourite-place-card-heading">Mysore Palace</h1>
+        <p class="favourite-place-card-description">Mysore Palace is a historical palace and a royal residence in Mysore, Karnataka, India.</p>
+      </div>
+      <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/mysore-palace1-img.png" alt="Mysore Palace" class="card-image">
+    </div>
+
+    <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectiongoldendetailedview')">
+      <div>
+        <h1 class="favourite-place-card-heading">Golden Temple</h1>
+        <p class="favourite-place-card-description">The Golden Temple is a gurdwara located in Amritsar, Punjab, India. It is the pre-eminent spiritual site of Sikhism.</p>
+      </div>
+      <img src="https://th.bing.com/th/id/OSK.HERO2QhmZYRRp-JvTATNlndWShnIgq5ziZ2z-2FOkcWqXU8?w=472&h=280" alt="Golden Temple" class="card-image">
+    </div>
+
+    <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionvaranasitempledetailedview')">
+      <div>
+        <h1 class="favourite-place-card-heading">Varanasi Temple</h1>
+        <p class="favourite-place-card-description">Kashi Vishwanath Temple is a Hindu temple dedicated to Shiva. It is located in Vishwanath Gali, Varanasi, Uttar Pradesh.</p>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.eQTtkkUIIhVAe4AOqHCUuwHaEK" alt="Varanasi Temple" class="card-image">
+    </div>
+
+    <button class="btn btn-dark mt-3" onclick="display('sectionhome')">Back</button>
+  </div>
+</div>
+
+<!-- Section Taj Mahal -->
+<div id="sectiontajmahaldetailedview">
+  <div class="detailed-view-bg-container">
+    <h1 class="detailed-view-card-heading">Detailed View</h1>
+    <div class="detailed-view-card-container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="d-block w-100" alt="Taj Mahal">
+          </div>
+          <div class="carousel-item">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png" class="d-block w-100" alt="Taj Mahal">
+          </div>
+          <div class="carousel-item">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="d-block w-100" alt="Taj Mahal">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="detailed-view-card3-container">
+        <h1 class="detailed-view-card1-heading">Taj Mahal</h1>
+        <p class="detailed-view-description">The Taj Mahal is a mausoleum located in Agra, India. It was commissioned in 1632 by Mughal Emperor Shah Jahan in memory of his favorite wife, Mumtaz Mahal.</p>
+        <p class="detailed-view-description">It combines elements of Persian, Islamic, and Indian architectural styles. Its white marble reflects different hues throughout the day.</p>
+      </div>
+
+      <button class="btn btn-dark" onclick="display('sectionfavouriteplaces')">Back</button>
+    </div>
+  </div>
+</div>
+
+<!-- Section Mysore Palace -->
+<div id="sectionmysorepalacedetailedview">
+  <div class="detailed-view-bg-container">
+    <h1 class="detailed-view-card-heading">Detailed View</h1>
+    <div class="detailed-view-card-container">
+      <div id="mysorepalacecarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mysorepalacecarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#mysorepalacecarousel" data-slide-to="1"></li>
+          <li data-target="#mysorepalacecarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/mysore-palace1-img.png" class="d-block w-100" alt="Mysore Palace">
+          </div>
+          <div class="carousel-item">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/mysore-palace2-img.png" class="d-block w-100" alt="Mysore Palace">
+          </div>
+          <div class="carousel-item">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/mysore-palace3-img.png" class="d-block w-100" alt="Mysore Palace">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#mysorepalacecarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#mysorepalacecarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="detailed-view-card3-container">
+        <h1 class="detailed-view-card1-heading">Mysore Palace</h1>
+        <p class="detailed-view-card-description">Mysore Palace, also known as Amba Vilas Palace,
+       is a historical palace and a royal residence. It is located in Mysore, Karnataka, India.
+        It used to be the official residence of the Wadiyar dynasty and the seat of the Kingdom of Mysore. 
+        The palace is in the centre of Mysore, and faces the Chamundi Hills eastward. 
+        Mysore is commonly described as the 'City of the Palaces', and there are seven palaces including this one. 
+        However, the Mysore Palace refers specifically to the one within the new fort.</p>
+      </div>
+
+      <button class="btn btn-dark" onclick="display('sectionfavouriteplaces')">Back</button>
+    </div>
+  </div>
+</div>
+
+<!-- Section Golden Temple -->
+<div id="sectiongoldendetailedview">
+  <div class="detailed-view-bg-container">
+    <h1 class="detailed-view-card-heading">Detailed View</h1>
+    <div class="detailed-view-card-container">
+      <div id="goldentemplecarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#goldentemplecarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#goldentemplecarousel" data-slide-to="1"></li>
+          <li data-target="#goldentemplecarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/goldentemple1-img.png" class="d-block w-100" alt="Golden Temple">
+          </div>
+          <div class="carousel-item">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/goldentemple2-img.png" class="d-block w-100" alt="Golden Temple">
+          </div>
+          <div class="carousel-item">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/goldentemple3-img.png" class="d-block w-100" alt="Golden Temple">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#goldentemplecarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#goldentemplecarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="detailed-view-card3-container">
+        <h1 class="detailed-view-card1-heading">Golden Temple</h1>
+        <p class="detailed-view-description">detailed-view-description">The Golden Temple is a gurdwara located in Amritsar, Punjab, India.
+       It is the pre-eminent spiritual site of Sikhism. 
+       It is one of the holiest sites in Sikhism, alongside the Gurdwara Darbar Sahib Kartarpur in Kartarpur, and Gurdwara Janam Asthan in Nankana Sahib.</p>
+        <ul class="unordered-list">
+          <li>Jallianwala Bagh</li>
+          <li>Wagah Border</li>
+          <li>Marike Wetland</li>
+          <li>Ramsar Site</li>
+        </ul>
+      </div>
+
+      <button class="btn btn-dark" onclick="display('sectionfavouriteplaces')">Back</button>
+    </div>
+  </div>
+</div>
+
+<!-- Section Varanasi Temple -->
+<div id="sectionvaranasitempledetailedview">
+  <div class="detailed-view-bg-container">
+    <h1 class="detailed-view-card-heading">Detailed View</h1>
+    <div class="detailed-view-card-container">
+      <div id="varanasitemplecarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#varanasitemplecarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#varanasitemplecarousel" data-slide-to="1"></li>
+          <li data-target="#varanasitemplecarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/varanasi1-img.png" class="d-block w-100" alt="Varanasi Temple">
+          </div>
+          <div class="carousel-item">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/varanasi2-img.png" class="d-block w-100" alt="Varanasi Temple">
+          </div>
+          <div class="carousel-item">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/varanasi3-img.png" class="d-block w-100" alt="Varanasi Temple">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#varanasitemplecarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#varanasitemplecarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="detailed-view-card3-container">
+        <h1 class="detailed-view-card1-heading">Varanasi Temple</h1>
+        <p class="detailed-view-description">detailed-view-description">Sri Kashi Vishwanath Temple also known as the Golden Temple,
+       it is dedicated to Lord Shiva, the presiding deity of the city. 
+       Varanasi is Said to be the point at which the first jyotirlinga, 
+       the fiery pillar of light by which shiva manifested has supremacy over others gods, broke through the Earth’s crust and flared towards the heavens.
+        More than the Gaths and even the Ganga, the Shivalinga installed in the temple remains the devotional focus of Varanasi.</p>
+      </div>
+
+      <button class="btn btn-dark" onclick="display('sectionfavouriteplaces')">Back</button>
+    </div>
+  </div>
+</div>
+
+
+ <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+</body>
+</html>
