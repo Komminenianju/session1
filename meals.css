@@ -1,0 +1,26 @@
+.bg-container{
+    background-image:url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/foodbg.png");
+    height: 750px;
+    width:450px;
+    background-size:cover ;
+    display:flex;
+}
+.food-card{
+    text-align: center;
+    background-color:pink;
+    padding: 1px;
+    
+}
+.heading{
+    font-family: "roboto";
+}
+.para{
+    font-family: "roboto";
+}
+.button{
+    height: 50px;
+    width: 100px;
+    background-color:green;
+    color:yellow;
+    border-radius: 20px;
+}
