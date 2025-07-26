@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Access Example</title>
+</head>
+<body>
+
+    <h1>Object Access Example</h1>
+    <p id="demo">Accessing object properties using dot and bracket notation.</p>
+
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age:20,
+        };
+
+        //add a new property
+        person.city="New York";
+
+        //delete the object
+        delete person.age;
+
+      
+        //show the object
+        document.getElementById("demo").innerHTML = 
+            "First Name: " + person.firstName + "<br>" +
+            "Last Name: " + person.lastName + "<br>" +
+            "City: " + person.city + "<br>" +
+            "Age:" + person.age; // This will show undefined since age was deleted
+
+    </script>
+</body>
+</html>
