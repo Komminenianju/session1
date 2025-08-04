@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <body>
+      <h1>OPEN THE BROWSER CONSOLE TO SEE THE OUTPUT</h1>
+      <ul id="fruitlist"></ul>
+    </body>
+    <script>
+      //   let fruits = ["Apple", "banana", "apple"];
+      //   console.log(fruits[0]);
+
+      //   fruits.push("orange");
+      //   fruits.pop();
+
+      //   console.log("Array length", fruits.length);
+      //   console.log(fruits);
+
+      let person = {
+        name: "alekhya",
+        age: "20",
+        city: "hyderabad",
+      };
+      console.log("person object:", person);
+
+      //task 2
+      let cricketer = {
+        match1: 45,
+        match2: 60,
+        match3: 30,
+      };
+      function totalScore(player) {
+        return player.match1 + player.match2 + player.match3;
+      }
+      console.log(totalScore(135));
+      //task 4
+      function checkEligibility(score) {
+        if (score <= 100) {
+          return "Eligible to play next level";
+        } else {
+          return "not eligible,try harder";
+        }
+      }
+      console.log(checkEligibility(120));
+      console.log(checkEligibility(80));
+      //task 5
+      let gamemode = "easy";
+      if (gamemode === "easy") {
+        console.log("you are playing easy game");
+      } else if (gamemode === "hard") {
+        console.log("you are playing in hard mode");
+      } else {
+        console.log("Unknown game mode");
+      }
+
+      //functions create  a function named greet that logs "Hello,student!" to the console
+      function greet() {
+        console.log("Hello, student!");
+      }
+      greet(); // calling the greet function
+
+      //create a function named greetUser that accepts one parameter name and logsa message like:Hello,Alice!
+
+      function greetUser(name) {
+        console.log("hello," + name + "!");
+      }
+      greetUser("Alice");
+
+      //create a function named add that takes two numbers as parameters and returns their sum
+
+      function add(num1, num2) {
+        return num1 + num2;
+      }
+      let result = add(5, 10);
+      console.log(result); // Output: 15
+    </script>
+  </head>
+</html>
